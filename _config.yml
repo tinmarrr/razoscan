@@ -1,0 +1,60 @@
+# Paramètres du site
+title: Mon Blog Tech
+description: Un blog dédié aux dernières tendances et innovations technologiques
+url: "https://votre-nom-utilisateur.github.io"
+baseurl: ""
+
+# Informations sur l'auteur
+author:
+  name: Votre Nom
+  email: votre-email@example.com
+
+# Configuration des réseaux sociaux
+social:
+  twitter: votre_twitter
+  github: votre_github
+  linkedin: votre_linkedin
+
+# Configuration du thème
+theme: minima
+
+# Configuration de la navigation
+header_pages:
+  - accueil.md
+  - articles.md
+  - projets.md
+  - a-propos.md
+
+# Configuration des collections
+collections:
+  articles:
+    output: true
+    permalink: /articles/:title/
+  projets:
+    output: true
+    permalink: /projets/:title/
+
+# Configuration de la pagination
+paginate: 5
+paginate_path: "/page:num/"
+
+# Plugins
+plugins:
+  - jekyll-paginate
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Exclusions
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+
+# Paramètres Markdown
+markdown: kramdown
+kramdown:
+  syntax_highlighter: rouge
+
+# Paramètres de date et d'heure
+timezone: Europe/Paris
